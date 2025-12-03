@@ -86,18 +86,27 @@
 
         <section id="montagem">
             <h2>Passo a passo da Montagem</h2>
+
+            <div class="step">
+                <h4>Passo inicial: reúna os componentes necessários</h4>
+                <p>Reúna o Arduino, LCD I2C, 3 botões, 3 LEDs, buzzer, resistores, jumpers e protoboard.</p>
+                <div class="step-img">
+                    <img src="img/passo0.jpg" alt="Foto dos componentes necessários">
+                </div>
+            </div>
             
             <div class="step">
                 <h4>Passo 1: Conectar o LCD I2C</h4>
-                <p>Conecte VCC ao 5V, GND ao GND, SDA ao pino A4 e SCL ao pino A5 do Arduino UNO.</p>
+                <p>Conecte VCC ao 5V, GND ao GND do arduino, SDA ao pino A4 e SCL ao pino A5 do Arduino UNO.</p>
                 <div class="step-img">
                     <img src="img/passo1.jpg" alt="Foto da conexão do LCD">
                 </div>
             </div>
 
             <div class="step">
-                <h4>Passo 2: Montagem dos Botões</h4>
-                <p>Posicione 3 botões na breadboard. Conecte cada um ao GND e a um pino digital (D5, D6, D7).</p>
+                <h4>Passo 2: Montagem dos Botões e dos LEDs</h4>
+                <p>Posicione os 3 botões na protoboard juntamente com os LEDs da respectiva cor, conforme imagem. Conecte cada um ao GND e a 
+                    um pino digital (D5, D6, D7).</p>
                 <div class="step-img">
                     <img src="img/passo2.jpg" alt="Foto da montagem dos botões">
                 </div>
@@ -105,7 +114,10 @@
 
             <div class="step">
                 <h4>Passo 3: Conexão dos LEDs</h4>
-                <p>Conecte os LEDs nos mesmos pinos dos botões (Anodo no pino via resistor, Cátodo no GND). Lembre-se que o Botão 1 compartilha conexão com o LED 1.</p>
+                <p>Conecte os LEDs (ânodo no pino por meio de um resistor e cátodo no GND) e os botões (uma perna no pino D5 e a outra no GND).
+                    Lembre-se de que o botão ligado ao pino D5 deve ser posicionado ao lado do LED do D2, ambos com a mesma cor. Da mesma forma,
+                    o botão do D6 deve ficar ao lado do LED do D3, também com cores correspondentes. Por fim, o botão do D7 deve ser colocado ao
+                    lado do LED do D4, mantendo a mesma cor entre eles.</p>
                 <div class="step-img">
                     <img src="img/passo3.jpg" alt="Foto da conexão dos LEDs">
                 </div>
@@ -129,26 +141,26 @@
 
             <div class="step">
                 <h4>Passo 6: Upload do Código</h4>
-                <p>Abra o Arduino IDE, carregue o sketch e envie para a placa. Verifique se não há erros de compilação.</p>
+                <p>Abra o Arduino IDE, se necessário instale a biblioteca do LiquidCrystal I2C, carregue o sketch e envie para a placa. Verifique se não há erros de compilação.</p>
                 <div class="step-img">
-                    <img src="img/passo6.jpg" alt="Foto do upload ou IDE">
+                    <img src="img/passo6.jpg" alt="Foto com o jogo funcional">
                 </div>
             </div>
 
             <div class="step">
                 <h4>Passo 7: Ajustes Finais</h4>
                 <p>Teste as sequências. Se estiver muito rápido, ajuste o <em>delay</em> no código. Verifique o contraste do LCD.</p>
-                <div class="step-img">
+                <!--<div class="step-img">
                     <img src="img/passo7.jpg" alt="Foto dos ajustes finais">
-                </div>
+                </div>-->
             </div>
-
+            <br>
             <div class="step">
                 <h4>Passo 8: Projeto Concluído</h4>
                 <p>O Memorino está pronto para ser jogado!</p>
-                <div class="step-img">
+                <!--<div class="step-img">
                     <img src="img/passo8.jpg" alt="Foto do projeto pronto">
-                </div>
+                </div>-->
             </div>
         </section>
 
